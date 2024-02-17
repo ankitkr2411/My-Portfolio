@@ -82,10 +82,11 @@ img{
 }
 
 .aboutme{
-  width: 133px;
+  width: 138px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
     border: 1px solid white;
     color: white;
     border-radius: 18px;
@@ -95,10 +96,12 @@ img{
 
 .aboutme:hover{
   background-color: #444444;
+  box-shadow: var(--color) 0px 0px 6px 2px;
 }
 
 .aboutme:active{
   background-color: #000000;
+  box-shadow: var(--color) 0px 0px 0px 0px;
 }
 
 
