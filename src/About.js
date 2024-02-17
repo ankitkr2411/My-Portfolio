@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import resume from "./resume/Resume.pdf"
-import { FaArrowRight } from "react-icons/fa"
+import { MdDownload } from "react-icons/md";
 import styled from "styled-components"
 
 
@@ -78,7 +78,7 @@ const About = () => {
       </div>
       <NavLink to={resume} download="Example-PDF-document" target="_blank" rel="noreferrer" className="butt">
             <div className="dowtxt">Download Resume</div>
-            <div className="arr"><FaArrowRight /></div>
+            <div className="arr"><MdDownload /></div>
           </NavLink>
     </div>
     </Wrapper>
