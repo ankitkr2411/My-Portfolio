@@ -31,7 +31,7 @@ const Sidebar = ({visit,setvisit}) => {
           <div className="info">Skills</div>
         </NavLink>
 
-        <NavLink to="/education" className="exper icon" onClick={()=>{setvisit("exper")}}>
+        <NavLink to="/experience" className="exper icon" onClick={()=>{setvisit("exper")}}>
           <IoSchoolSharp />
           <div className="info">Experience</div>
         </NavLink>
