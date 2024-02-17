@@ -3,10 +3,12 @@ import { FaArrowRight } from "react-icons/fa";
 import image from "./images/image.png";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import homebg from "./images/homebg.jpg";
 
 const Home = ({setvisit}) => {
   return (
-    <Wrapper>
+    <Wrapper homebg={homebg}>
+      <div className="bg"></div>
       <div className="main">
         <div className="imgdiv"><img src={image}/></div>
         <div className="txtdiv">
@@ -27,10 +29,39 @@ innovative solutions in the ever-evolving tech landscape.</p>
 
 const Wrapper = styled.section`
 
+.bg{
+  position: relative;
+  background-image:url("${(props)=>props.homebg}");
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  width:100%;
+  height:100vh;
+}
+
+.bg::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  backdrop-filter: blur(4px);
+  background-color: #00000029;
+
+}
+
+
+
 .main{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  width:100%;
+  height:100vh;
 }
 
 .imgdiv{
@@ -53,7 +84,7 @@ img{
   flex-direction: column;
   justify-content: center;
   padding: 0px 69px 0px 53px;
-  background-color: var(--backgroundColor);
+  
 }
 
 .name{

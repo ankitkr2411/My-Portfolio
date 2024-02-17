@@ -54,10 +54,12 @@ const Wrapper = styled.section`
     width: 59px;
     right: 0px;
     align-items: center;
-    background-color: var(--backgroundColor);
+    background-color: #16161682;
+    backdrop-filter: blur(5px);
     color: white;
     position: absolute;
     box-shadow: #ffa200 -1px 0px 14px -7px;
+    z-index:100;
   }
 
   .icon {

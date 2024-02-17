@@ -2,11 +2,13 @@ import { NavLink } from "react-router-dom"
 import resume from "./resume/Resume.pdf"
 import { MdDownload } from "react-icons/md";
 import styled from "styled-components"
+import aboutbg from "./images/aboutbg.jpg"
 
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper aboutbg={aboutbg}>
+      <div className="bg"></div>
     <div className="main">
     <div className="res">RESUME</div>
       <div className="head"><span className="ab">ABOUT</span> ME</div>
@@ -87,13 +89,38 @@ const About = () => {
 
 const Wrapper = styled.section`
 
+.bg{
+  position: relative;
+  background-image:url("${(props)=>props.aboutbg}");
+  width:100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg::after{
+  content:"";
+  position:relative;
+  top:0;
+  width:100%;
+  height:100%;
+  backdrop-filter: blur(8px);
+}
+
 .main{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:100%;
     height: 100vh;
-    background-color: var(--backgroundColor);
+
+    
 }
 
 .res{
@@ -133,9 +160,9 @@ const Wrapper = styled.section`
   color: white;
   margin:0px 20px;
   padding: 43px;
-  /* border: 1px solid #ffa200; */
-  box-shadow: var(--color) 0px 0px 12px -4px;
-  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
 }
 
 .perstxt{
