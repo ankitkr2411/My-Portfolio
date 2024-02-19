@@ -45,7 +45,7 @@ const Wrapper = styled.section`
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #0000008c,#4800ff29, transparent,#4800ff29,#0000008c);
+  background: #00000047;
   backdrop-filter: blur(2px);
 }
 
@@ -92,8 +92,8 @@ const Wrapper = styled.section`
   font-size: 150px;
     margin: 10px 38px;
     background-color: rgb(0 0 0 / 41%);
-    border: 2px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(2px);
     padding: 16px;
     border-radius: 25px;
     height: 220px;

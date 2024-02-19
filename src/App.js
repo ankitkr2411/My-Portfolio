@@ -4,9 +4,9 @@ import Sidebar from "./Sidebar";
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
-import Education from "./Education";
 import Contact from "./Contact";
 import { useEffect, useState } from "react";
+import Experience from "./Experience";
 
 function App() {
 
@@ -52,7 +52,7 @@ function App() {
           <Route path="/" element={<Home setvisit={setvisit} />}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/skills" element={<Skills/>}/>
-          <Route path="/experience" element={<Education/>}/>
+          <Route path="/experience" element={<Experience/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>

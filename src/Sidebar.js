@@ -3,6 +3,7 @@ import { IoPersonSharp } from "react-icons/io5";
 import { IoCodeSlash } from "react-icons/io5";
 import { IoSchoolSharp } from "react-icons/io5";
 import { BiSolidMessage } from "react-icons/bi";
+import { FaComputer } from "react-icons/fa6";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -32,7 +33,7 @@ const Sidebar = ({visit,setvisit}) => {
         </NavLink>
 
         <NavLink to="/experience" className="exper icon" onClick={()=>{setvisit("exper")}}>
-          <IoSchoolSharp />
+        <FaComputer />
           <div className="info">Experience</div>
         </NavLink>
 
