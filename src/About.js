@@ -32,7 +32,7 @@ const About = () => {
           <p className="info">Email: <span>ankitkr2411@gmail.com</span></p>
         </div>
         <div className="infobox">
-          <p className="info">Linkedin: <span><a href="www.linked.com/ankitkr2411">ankitkr2411</a></span></p>
+          <p className="info">Linkedin: <span><a href="https://www.linkedin.com/in/akr2411/" target="_blank" rel="noreferrer">ankitkr2411</a></span></p>
           <p className="info">Language: <span>English, Hindi</span></p>
         </div>
       </div>
